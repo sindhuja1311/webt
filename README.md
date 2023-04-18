@@ -1,1 +1,2 @@
-# webt
+# WEB TECHNOLOGY LAB
+Lab experiments
