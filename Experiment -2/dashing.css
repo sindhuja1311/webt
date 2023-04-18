@@ -1,0 +1,62 @@
+body{
+  font-family: sans-serif;
+ 
+}
+#top-nav ul {
+        list-style-type: none;
+        margin:0px;
+        padding:10px;
+        overflow: hidden;
+        background-image:url('SKY\ Rosa\ Rose\ gold\ Céu\ _\ Pink\ clouds\ wallpaper\,\ Pink\ wallpaper\ backgrounds\,\ Cloud\ wallpaper.jpg'); 
+        height: 90px;   
+        
+        box-sizing: border-box;
+      }
+      
+#top-nav li {
+        float: left;
+      }
+#top-nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 20px;
+        text-decoration: none;
+        font-size: 23px;
+        
+      }
+#top-nav li a:hover {
+        background-color:white;
+        color:black
+      }
+#pic-upload form{
+  background-image:url('SKY\ Rosa\ Rose\ gold\ Céu\ _\ Pink\ clouds\ wallpaper\,\ Pink\ wallpaper\ backgrounds\,\ Cloud\ wallpaper.jpg'); 
+  margin: 100px auto 0px;
+  padding-bottom: 30px;
+  padding-top: 50px;
+    box-sizing: border-box;
+}
+#pic-upload input{
+  text-align: center;
+  border-radius: 4px;
+  font-family: sans-serif;
+  color: #bc717f;
+  font-size: 20px;
+  padding: 7px 20px 7px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#pic-upload input:hover,.signup1-butt:hover,.signup-butt:hover{
+  text-align: center;
+  background-color:#50a9f9;
+  background-image: linear-gradient(to bottom,#d82454,#d82454);
+  border-radius: 20px;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 7px 20px 7px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
