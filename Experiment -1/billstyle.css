@@ -1,0 +1,40 @@
+#menu {
+    display: flex;
+    justify-content: space-between;
+  }
+body{
+  background-color: #f18642;
+  font-family: sans-serif;
+  background-image: "img4.jpeg";
+}
+button:link,
+ button:visited,
+ button:focus
+ 	{
+ 	background:white;
+ 	color:black;
+ }
+ button:hover{
+  color:green;
+  background:pink;
+  }
+  .item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .item img {
+    display: block;
+    margin: auto;
+  }
+  
+  .item button {
+    margin-top: 10px;
+  }
+  
+  #order-summary {
+    text-align: left;
+  }
+  

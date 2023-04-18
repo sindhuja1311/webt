@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+        body{text-align: center;
+        font-family: sans-serif;}
+        b1{
+            font-size: 2em;
+            margin-top: 50px;
+        }
+        #guess-input{
+            font-size: 1.5em;
+            width: 60px;
+        }
+        button{
+            font-size:1.5em;
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body bgcolor="#f18642">
+    <h1>GUESS THE NUMBER BETWEEN 1 & 100</h1>
+    <label for="guess-input">Guess?</label>
+    <input type="number" id="guess-input">
+    <button onclick="guess()">Submit</button>
+    <p id="result"></p>
+    <p>Remaining Attempts: <span id="remaining-attempts">5</span></p>
+
+   <script>
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+        let remainingAttempts = 5;
+        function guess() {
+        const guess = parseInt(document.getElementById("guess-input").value);
+        const remainingAttemptsElement = document.getElementById("remaining-attempts");
+
+        if (isNaN(guess)) {
+          document.getElementById("result").textContent = "Please enter a valid number";
+        } 
+        else if (guess < 1 || guess > 100) {
+          document.getElementById("result").textContent = "Please enter a number between 1 and 100";
+        } 
+        else if (guess === randomNumber) {
+          document.getElementById("result").textContent = "Congratulations! You guessed the number.";
+          remainingAttemptsElement.textContent = remainingAttempts;
+        }
+         else if (guess < randomNumber) {
+          document.getElementById("result").textContent = "Your guess is too low.Try again.";
+          remainingAttempts--;
+          remainingAttemptsElement.textContent = remainingAttempts;
+        }
+         else if (guess > randomNumber) {
+          document.getElementById("result").textContent = "Your guess is too high.Try again.";
+          remainingAttempts--;
+          remainingAttemptsElement.textContent = remainingAttempts;
+        }
+        if (remainingAttempts === 0) {
+          document.getElementById("result").textContent = "Sorry, you have used all your attempts. The number was " + randomNumber + ".";
+          document.getElementById("guess-input").setAttribute("disabled", "");
+        }
+      }
+    </script>
+</body>
+</html>

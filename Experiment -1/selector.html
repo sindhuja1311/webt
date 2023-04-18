@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection</title>
+    <style>
+     body{
+        background-color:#f18642;
+        font-family:sans-serif;
+        color: white;
+
+     }
+    </style>
+    <script>
+       function perfrom(){
+        ql=document.createElement("form");
+        var x=document.querySelector("#btn");
+        var y=document.querySelector("#optis");
+        var z=document.createElement("br");
+            document.body.appendChild(z);
+        if (y.value=="ta"){
+            var bi=document.createElement("textarea");
+            ql.appendChild(bi);
+        }
+        else if(y.value=='tb'){   
+            var bi=document.createElement('input');
+            ql.appendChild(bi);
+        }
+        else if(y.value=='radio'){
+            var labe = document.createElement("label");
+            labe.innerText="HTML,CSS";
+            var bi=document.createElement('input');
+            bi.setAttribute("type","radio");
+            ql.appendChild(bi);
+            ql.appendChild(labe);
+        }
+        /*
+        else if(y.value='colorpick'){
+            var bi=document.createElement("input");
+            bi.setAttribute("type","color");
+            ql.appendChild(bi)
+        }
+        */
+        else{
+            var labe=document.createElement("label");
+            labe.innerText="Javascript";
+            var bi=document.createElement("input");
+            bi.setAttribute("type","checkbox");
+            ql.appendChild(bi);
+            ql.appendChild(labe);
+        }
+        document.body.appendChild(ql);
+       }
+       
+    </script>
+</head>
+<body>
+    <form for="optis" >
+        <label >Choose from below:</label>
+        <br>
+        <select id="optis">
+          <option value="ta" >TextArea</option>
+          <option value="tb" >TextBox</option>
+          <option value="radio">RadioButton</option>
+          <option value="checkbox" >CheckBox</option>
+        </select>  
+      </form>
+      <button id="btn" onclick="perfrom()">GO!</button>
+      <form action="" id="frms"></form>
+     
+</body>
+</html>

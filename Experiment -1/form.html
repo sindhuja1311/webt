@@ -1,0 +1,80 @@
+<html>
+<head>
+	<link href="syle.css" rel="stylesheet">
+	<title>Regform</title>
+	<style>
+		body{
+			background-color: #f18642;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<form name="forum" method="get/post" action="ppp.php">
+	<h2 align="center">REGISTRATION FORM</h2>
+	<table border=0 cellspacing=2 cellpadding=10>
+	<tr>
+		<td><label for="username">USERNAME</label></td>
+		<td><input type="text" name="uname" required></td>
+	</tr>
+	<tr>
+		<td><label for="email">EMAIL</label></td>
+		<td><input type="email" name="eid" required></td>
+	</tr>
+	<tr>
+		<td><label for="gender">GENDER</label></td>
+		<td><input type="radio" name="gd">male
+			<input type="radio" name="gd">female
+			<input  type="radio" name="gd">other
+		</td>
+	</tr>
+	<tr>
+		<td><label for="religion">RELIGION</label></td>
+		<td>
+		<select name="rel" required >
+			<option>select</option>
+			<option>hindu</option>
+			<option>muslim</option>
+			<option>christian</option>
+			<option>other</option>
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td><label for="DOB">DOB</label></td>
+		<td><input type="date" name="DOB" required></td>
+	</tr>
+	<tr>
+		<td><label for="LANGUAGES">LANGUAGES</label></td>
+		<td><input type="checkbox" name="lang" >T
+			<input type="checkbox" name="lang">E
+		 </td>
+	</tr>
+	<tr>
+		<td><label for="address">ADDRESS</label></td>
+		<td>
+			<textarea rows=5 cols=20 ></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td><label for="password">PASSWORD</label></td>
+		<td><input type="password" name="pass" required></td>
+	</tr>
+	<tr >
+		<td><input type="submit" name="sub" value="here to submit"  required></td>
+		<td><input type="reset" name="res" value="here to reset"  required></td>
+	</tr>
+	</table>
+	<ul>
+		<li>read the instructions carefully</li>
+		<li>contact for help</li>
+		<li>terms & conditions applied</li>
+	</ul>
+	<nav>
+		<a href="#">HELP</a>
+		<a href="#">CONTACT</a>
+	</nav>
+	</form>
+	</div>
+</body>
+</html>
